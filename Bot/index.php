@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/config.php";
-////////BENCHAMIN LOUIS//////
-//CHANNEL:- T.ME/INDUSBOTS////
+////////EK BOTZ PROJECT//////
+//CHANNEL:- t.me/ekbotz_update////
 error_reporting(0);
 
 set_time_limit(0);
@@ -29,7 +29,7 @@ function bot($method,$datas=[]){
 	'parse_mode'=>$mode
 	]);
 	}
-//==============BENCHAM======================//
+//==============EK BOTZ PROJECT======================//
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
 $message_id = $update->message->id;
@@ -37,7 +37,7 @@ $chat_id = $message->chat->id;
 $name = $from_id = $message->from->first_name;
 $from_id = $message->from->id;
 $text = $message->text;
-//===============BENCHAM=============//
+//===============EK BOTZ PROJECT=============//
 if($text == "/start") 
 
             bot('sendmessage', [
@@ -53,7 +53,7 @@ $short = $get['shortenedUrl'];
 if($get['shortenedUrl']){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text'=>"<b>Thank you for using me☺
+                'text'=>"<b>Thank you for using me😉.
 
 YOUR SHORTEN URL: </b> <code>$short</code>
 
@@ -66,7 +66,7 @@ YOUR SHORTEN URL: </b> <code>$short</code>
 }else {
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"<b>PLEASE GIVE ME A VALID URL</b>",
+                'text' =>"<b>PLEASE GIVE ME A VALID URL🤓.</b>",
                 'parse_mode'=>"HTML",
                
 ]);
